@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Task 2</title>
+    <style>
+      h4 {
+        padding-left: 120px;
+      }
+      table {
+        border: 2px solid black;
+        border-collapse: separate;
+        border-spacing: 0 0;
+        padding: 10px;
+      }
+      tr,
+      th,
+      td {
+        width: 250px;
+        height: 30px;
+        padding: 10px;
+        background-color: rgb(216, 214, 214);
+      }
+      td:hover {
+        background-color: rgb(151, 149, 149);
+      }
+      .navtable {
+        font-size: x-large;
+      }
+      .blueline {
+        border-right: 1px solid blue;
+      }
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h2>CSS Task 2</h2>
+      <h4>Horizontal Navigation Bar</h4>
+      <table class="navtable">
+        <tr>
+          <td class="blueline">
+            <a href="#homepage">Home</a>
+          </td>
+          <td class="blueline">
+            <a href="#java">Java</a>
+          </td>
+          <td class="blueline">
+            <a href="#css">CSS</a>
+          </td>
+          <td class="blueline">
+            <a href="#html">HTML</a>
+          </td>
+          <td>
+            <a href="#bootstrap">Bootstrap</a>
+          </td>
+        </tr>
+      </table>
+    </nav>
+  </body>
+</html>
