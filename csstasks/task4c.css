@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.sidenav {
+  height: 100%;
+  width: 60px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+.sidenav a {
+  position: relative;
+  padding: 15px 8px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.sidenav a .icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.sidenav a .text {
+  display: none;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.sidenav a:hover {
+  width: 240px;
+}
+.sidenav a:hover .text {
+  display: inline-block;
+}
+.sidenav a:hover .icon {
+  display: none;
+}
+.sidenav a.green:hover {
+  background-color: green;
+}
+.sidenav a.blue:hover {
+  background-color: blue;
+}
+.sidenav a.red:hover {
+  background-color: red;
+}
+.sidenav a.gray:hover {
+  background-color: gray;
+}
+.container {
+  margin-left: 60px;
+  padding: 20px;
+}
+h2 {
+  margin-top: 0;
+}

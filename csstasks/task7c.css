@@ -1,0 +1,38 @@
+.outer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(175, 34, 107);
+  width: 450px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(123, 20, 73);
+  width: 400px;
+  align-items: center;
+}
+input::placeholder {
+  font-size: x-small;
+}
+textarea::placeholder {
+  font-size: x-small;
+}
+tr,
+td,
+th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+button {
+  width: 320px;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-color: white;
+  border-radius: 5px;
+}

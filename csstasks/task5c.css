@@ -1,0 +1,42 @@
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #c0c046;
+  color: #993399;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  color: #993399;
+}
+.sidenav {
+  float: left;
+  width: 150px;
+  background-color: #c0c046;
+  padding-top: 30px;
+}
+.sidenav a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #993399;
+  background-color: #ffffff;
+  border-left: 10px solid black;
+  margin-bottom: 4px;
+  font-family: Verdana, sans-serif;
+}
+.sidenav a:hover {
+  background-color: #ddd;
+}
+.content {
+  margin-left: 170px;
+}
+.content em {
+  position: relative;
+}
+.content em:before {
+  content: "";
+  position: absolute;
+  width: 900%;
+  border-bottom: 1px solid #993399;
+  top: -12px;
+}

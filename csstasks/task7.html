@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Task 7</title>
+    <link rel="stylesheet" href="task7c.css" />
+  </head>
+  <body>
+    <div class="outer">
+      <div class="inner">
+        <table>
+          <tr>
+            <td><label for="name">Name: </label></td>
+            <td><input type="text" id="name" placeholder="your name" /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email: </label></td>
+            <td><input type="text" id="email" placeholder="your email" /></td>
+          </tr>
+          <tr>
+            <td><label for="pwd">Password: </label></td>
+            <td><input type="text" id="pwd" /></td>
+          </tr>
+          <tr>
+            <td><label for="phn">Phone Number: </label></td>
+            <td><input type="text" id="phn" /></td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender: </label></td>
+            <td>
+              <label for="male"
+                >Male: <input type="radio" id="male" name="gender" /> </label
+              ><label for="female"
+                >Female:
+                <input type="radio" id="female" name="gender" /> </label
+              ><label for="other"
+                >Other: <input type="radio" id="other" name="gender" />
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>Language:</td>
+            <td>
+              <select name="language" id="language">
+                <option value="">select language</option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="French">French</option>
+                <option value="German">Germman</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="zipc">Zip Code: </label></td>
+            <td><input type="text" id="zipc" /></td>
+          </tr>
+          <tr>
+            <td><label for="about">About: </label></td>
+            <td>
+              <textarea
+                name="about"
+                id="about"
+                rows="2"
+                cols="21"
+                placeholder="Write about yourself... "
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+        <div>
+          <button>Register</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
