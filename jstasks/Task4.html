@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Task4</title>
+  </head>
+  <body>
+    <button type="button" onclick="showDate()">Show Date</button>
+    <p id="dateResult"></p>
+    <button type="button" onclick="showTime()">Show Time</button>
+    <p id="timeResult"></p>
+    <script type="text/javascript">
+      function showDate() {
+        const date = new Date();
+        const day = date.getDate();
+        const month = date.toLocaleString("default", { month: "long" });
+        const year = date.getFullYear();
+        const formattedDate = `${day}/${month}/${year}`;
+        document.getElementById("dateResult").innerText = formattedDate;
+      }
+      function showTime() {
+        const date = new Date();
+        const istTime = date.toLocaleString("en-US", {
+          timeZone: "Asia/Kolkata",
+        });
+        const formattedTime = new Date(istTime).toString();
+        document.getElementById("timeResult").innerText = formattedTime;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Task1</title>
+  </head>
+  <body>
+    <script>
+      function reverseNumber(number) {
+        let str = number.toString();
+        let reversedStr = str.split("").reverse().join("");
+        let reversedNumber = parseInt(reversedStr, 10);
+        return reversedNumber;
+      }
+      let x = 32243;
+      console.log(reverseNumber(x));
+    </script>
+  </body>
+</html>
