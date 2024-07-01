@@ -9,20 +9,20 @@
         font-family: Arial, sans-serif;
         margin: 20px;
         padding: 20px;
-        background-color: #f0f0f0;
+        background-color: rgb(42, 38, 38);
       }
 
       h1 {
-        color: #333;
+        color: white;
       }
 
       h3 {
-        color: #666;
+        color: #978787;
       }
 
       table {
         border: 2px solid black;
-        border-collapse: separate;
+        border-collapse: collapse;
         margin-top: 20px;
         width: 100%;
       }
@@ -37,9 +37,8 @@
       th {
         background-color: #f2f2f2;
       }
-
-      tr:nth-child(even) {
-        background-color: #f2f2f2;
+      tr {
+        background-color: white;
       }
 
       a {
@@ -50,13 +49,50 @@
       a:hover {
         text-decoration: underline;
       }
+
+      button {
+        background-color: rgb(243, 131, 51);
+        margin: 0 10px;
+        padding: 6px 12px;
+        font-size: 10px;
+        cursor: pointer;
+        border: none;
+        color: #333;
+        border-radius: 4px;
+      }
+
+      .button-container {
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .button-container button {
+        background-color: rgb(112, 130, 56);
+        margin: 0 10px;
+        padding: 8px 16px;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+        color: #333;
+        border-radius: 4px;
+      }
     </style>
   </head>
   <body>
     <h1>Prajwal Nagle</h1>
     <h3>ECM - 22BLC1072</h3>
     <h3>2:30 - 4:30</h3>
-    <h3>HTML Tasks</h3>
+    <div class="button-container">
+      <button onclick="scrollToSection('html-tasks')">HTML Tasks</button>
+      <button onclick="scrollToSection('css-tasks')">CSS Tasks</button>
+      <button onclick="scrollToSection('bootstrap-tasks')">
+        Bootstrap Tasks
+      </button>
+      <button onclick="scrollToSection('javascript-tasks')">
+        JavaScript Tasks
+      </button>
+    </div>
+    <h3 id="html-tasks">HTML Tasks</h3>
     <table>
       <tr>
         <th>Task Name</th>
@@ -65,41 +101,46 @@
       <tr>
         <td>Task 1</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/htmltasks/task1.html">HTML Task 1</a>
+          <button onclick="goToTask('../MERN-Project/htmltasks/task1.html')">
+            HTML Task 1
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 2</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/htmltasks/task2.html">HTML Task 2</a>
+          <button onclick="goToTask('../MERN-Project/htmltasks/task2.html')">
+            HTML Task 2
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 3</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/htmltasks/task3.html">HTML Task 3</a>
+          <button onclick="goToTask('../MERN-Project/htmltasks/task3.html')">
+            HTML Task 3
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 4</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/htmltasks/task4.html">HTML Task 4</a>
+          <button onclick="goToTask('../MERN-Project/htmltasks/task4.html')">
+            HTML Task 4
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 5</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/htmltasks/task5.html">HTML Task 5</a>
+          <button onclick="goToTask('../MERN-Project/htmltasks/task5.html')">
+            HTML Task 5
+          </button>
         </td>
       </tr>
     </table>
 
-    <h3>CSS Tasks</h3>
+    <h3 id="css-tasks">CSS Tasks</h3>
     <table>
       <tr>
         <th>Task Name</th>
@@ -108,55 +149,62 @@
       <tr>
         <td>Task 1</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/csstasks/task1.html">CSS Task 1</a>
+          <button onclick="goToTask('../MERN-Project/csstasks/task1.html')">
+            CSS Task 1
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 2</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/csstasks/task2.html">CSS Task 2</a>
+          <button onclick="goToTask('../MERN-Project/csstasks/task2.html')">
+            CSS Task 2
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 3</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/csstasks/task3.html">CSS Task 3</a>
+          <button onclick="goToTask('../MERN-Project/csstasks/task3.html')">
+            CSS Task 3
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 4</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/csstasks/task4.html">CSS Task 4</a>
+          <button onclick="goToTask('../MERN-Project/csstasks/task4.html')">
+            CSS Task 4
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 5</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/csstasks/task5.html">CSS Task 5</a>
+          <button onclick="goToTask('../MERN-Project/csstasks/task5.html')">
+            CSS Task 5
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 6</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/csstasks/task6.html">CSS Task 6</a>
+          <button onclick="goToTask('../MERN-Project/csstasks/task6.html')">
+            CSS Task 6
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 7</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/csstasks/task7.html">CSS Task 7</a>
+          <button onclick="goToTask('../MERN-Project/csstasks/task7.html')">
+            CSS Task 7
+          </button>
         </td>
       </tr>
     </table>
 
-    <h3>Bootstrap Tasks</h3>
+    <h3 id="bootstrap-tasks">Bootstrap Tasks</h3>
     <table>
       <tr>
         <th>Task Name</th>
@@ -165,60 +213,66 @@
       <tr>
         <td>Task 1</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/bootstraptasks/task1.html"
-            >Bootstrap Task 1</a
+          <button
+            onclick="goToTask('../MERN-Project/bootstraptasks/task1.html')"
           >
+            Bootstrap Task 1
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 2</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/bootstraptasks/task2.html"
-            >Bootstrap Task 2</a
+          <button
+            onclick="goToTask('../MERN-Project/bootstraptasks/task2.html')"
           >
+            Bootstrap Task 2
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 3</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/bootstraptasks/task3.html"
-            >Bootstrap Task 3</a
+          <button
+            onclick="goToTask('../MERN-Project/bootstraptasks/task3.html')"
           >
+            Bootstrap Task 3
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 4</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/bootstraptasks/task4.html"
-            >Bootstrap Task 4</a
+          <button
+            onclick="goToTask('../MERN-Project/bootstraptasks/task4.html')"
           >
+            Bootstrap Task 4
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 5</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/bootstraptasks/task5.html"
-            >Bootstrap Task 5</a
+          <button
+            onclick="goToTask('../MERN-Project/bootstraptasks/task5.html')"
           >
+            Bootstrap Task 5
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 6</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/bootstraptasks/task6.html"
-            >Bootstrap Task 6</a
+          <button
+            onclick="goToTask('../MERN-Project/bootstraptasks/task6.html')"
           >
+            Bootstrap Task 6
+          </button>
         </td>
       </tr>
     </table>
 
-    <h3>JavaScript Tasks</h3>
+    <h3 id="javascript-tasks">JavaScript Tasks</h3>
     <table>
       <tr>
         <th>Task Name</th>
@@ -227,59 +281,78 @@
       <tr>
         <td>Task 1</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/jstasks/Task1.html">HTML Task 1</a>
+          <button onclick="goToTask('../MERN-Project/jstasks/Task1.html')">
+            JavaScript Task 1
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 2</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/jstasks/Task2.html">HTML Task 2</a>
+          <button onclick="goToTask('../MERN-Project/jstasks/Task2.html')">
+            JavaScript Task 2
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 3</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/jstasks/Task3.html">HTML Task 3</a>
+          <button onclick="goToTask('../MERN-Project/jstasks/Task3.html')">
+            JavaScript Task 3
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 4</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/jstasks/Task4.html">HTML Task 4</a>
+          <button onclick="goToTask('../MERN-Project/jstasks/Task4.html')">
+            JavaScript Task 4
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 5</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/jstasks/Task5.html">HTML Task 5</a>
+          <button onclick="goToTask('../MERN-Project/jstasks/Task5.html')">
+            JavaScript Task 5
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 6</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/jstasks/Task6.html">HTML Task 5</a>
+          <button onclick="goToTask('../MERN-Project/jstasks/Task6.html')">
+            JavaScript Task 6
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 7</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/jstasks/Task7.html">HTML Task 5</a>
+          <button onclick="goToTask('../MERN-Project/jstasks/Task7.html')">
+            JavaScript Task 7
+          </button>
         </td>
       </tr>
       <tr>
         <td>Task 8</td>
         <td>
-          Task Link:
-          <a href="../MERN-Project/jstasks/Task8.html">HTML Task 5</a>
+          <button onclick="goToTask('../MERN-Project/jstasks/Task8.html')">
+            JavaScript Task 8
+          </button>
         </td>
       </tr>
     </table>
+    <script>
+      function scrollToSection(id) {
+        var element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+      function goToTask(link) {
+        window.location.href = link;
+      }
+    </script>
   </body>
 </html>
