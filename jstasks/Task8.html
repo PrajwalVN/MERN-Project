@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        background-image: url("../images/multiclr.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+        margin: 20px;
+      }
+
+      h1 {
+        color: blue;
+        text-align: center;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      table td {
+        padding: 10px;
+        position: relative;
+      }
+
+      table textarea {
+        width: calc(100% - 20px);
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      table select {
+        width: calc(100% - 20px);
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .invalid-feedback {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        color: red;
+        font-size: 12px;
+        display: none;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      button:hover {
+        background-color: darkred;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registration Form</h1>
+      <form id="registrationForm">
+        <table>
+          <tr>
+            <td align="center">First Name:</td>
+            <td>
+              <input type="text" id="firstname" name="firstname" size="50" />
+              <span class="invalid-feedback">Poor</span>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">Last Name:</td>
+            <td>
+              <input type="text" id="lastname" name="lastname" size="50" />
+              <span class="invalid-feedback">Poor</span>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">Password:</td>
+            <td>
+              <input type="password" id="password" name="password" size="50" />
+              <span class="invalid-feedback">Poor</span>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">Re-enter Password:</td>
+            <td>
+              <input
+                type="password"
+                id="repassword"
+                name="repassword"
+                size="50"
+              />
+              <span class="invalid-feedback">Poor</span>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">Gender:</td>
+            <td>
+              <div>
+                <input type="radio" id="male" name="gender" value="Male" />
+                <label for="male">Male</label>
+              </div>
+              <div>
+                <input type="radio" id="female" name="gender" value="Female" />
+                <label for="female">Female</label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">Age:</td>
+            <td>
+              <input type="text" id="age" name="age" size="50" />
+              <span class="invalid-feedback">Poor</span>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">Phone Number:</td>
+            <td>
+              <input
+                type="text"
+                id="phonenumber"
+                name="phonenumber"
+                size="50"
+              />
+              <span class="invalid-feedback">Poor</span>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">Address:</td>
+            <td>
+              <textarea
+                name="address"
+                id="address"
+                rows="5"
+                cols="45"
+              ></textarea>
+              <span class="invalid-feedback">Poor</span>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">State:</td>
+            <td>
+              <input type="text" id="state" name="state" size="50" />
+              <span class="invalid-feedback">Poor</span>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">Country:</td>
+            <td>
+              <select name="country" id="country">
+                <option value="">Choose your country</option>
+                <option value="India">India</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Russia">Russia</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">Languages Known:</td>
+            <td>
+              <input
+                type="checkbox"
+                id="English"
+                name="languages"
+                value="English"
+              /><label for="English">English</label>
+              <input
+                type="checkbox"
+                id="Hindi"
+                name="languages"
+                value="Hindi"
+              /><label for="Hindi">Hindi</label>
+              <input
+                type="checkbox"
+                id="Telugu"
+                name="languages"
+                value="Telugu"
+              /><label for="Telugu">Telugu</label>
+              <input
+                type="checkbox"
+                id="Kannada"
+                name="languages"
+                value="Kannada"
+              /><label for="Kannada">Kannada</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="checkbox" id="declaration" name="declaration" />
+              <label for="declaration"
+                >Hereby I declare all the given details are true</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" align="right">
+              Login to <a href="ethnus.com">Ethnus</a> website
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button type="submit">Register</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const inputs = document.querySelectorAll(
+          'input[type="text"], input[type="password"], textarea'
+        );
+
+        inputs.forEach((input) => {
+          const span = input.nextElementSibling;
+          input.addEventListener("input", function () {
+            if (input.value.trim().length === 0) {
+              span.style.display = "inline";
+            } else {
+              span.style.display = "none";
+            }
+          });
+        });
+
+        const password = document.getElementById("password");
+        const repassword = document.getElementById("repassword");
+
+        password.addEventListener("input", function () {
+          const span = password.nextElementSibling;
+          if (password.value.length < 8) {
+            span.style.display = "inline";
+          } else {
+            span.style.display = "none";
+          }
+        });
+
+        repassword.addEventListener("input", function () {
+          const span = repassword.nextElementSibling;
+          if (
+            repassword.value.length < 8 ||
+            repassword.value !== password.value
+          ) {
+            span.style.display = "inline";
+          } else {
+            span.style.display = "none";
+          }
+        });
+
+        const form = document.getElementById("registrationForm");
+
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          let isValid = true;
+
+          inputs.forEach((input) => {
+            const span = input.nextElementSibling;
+            if (input.value.trim().length === 0) {
+              span.style.display = "inline";
+              isValid = false;
+            } else {
+              span.style.display = "none";
+            }
+          });
+
+          if (password.value.length < 8) {
+            const span = password.nextElementSibling;
+            span.style.display = "inline";
+            isValid = false;
+          }
+
+          if (
+            repassword.value.length < 8 ||
+            repassword.value !== password.value
+          ) {
+            const span = repassword.nextElementSibling;
+            span.style.display = "inline";
+            isValid = false;
+          }
+
+          if (isValid) {
+            alert("Form submitted successfully!");
+            form.reset();
+          } else {
+            alert("Please fill in all required fields correctly.");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
